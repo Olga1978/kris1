@@ -57,7 +57,12 @@ small {
 	<li><a href="https://www.povarenok.ru/">Поваренок</a></li>
 </ul>
 
-<p><small>Все права защищены 2021, Кухня Кристины</small></p>
-
+<p><small>Все права защищены &copy; <span id="current-year"></span> , Кухня Кристины</small></p>
+   <script>
+        // Получаем текущий год
+        const currentYear = new Date().getFullYear();
+        // Находим элемент с id "current-year" и устанавливаем его текстовое содержимое
+        document.getElementById('current-year').textContent = currentYear;
+    </script>
 </body>
 </html>
